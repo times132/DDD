@@ -2,14 +2,14 @@ package com.times132.ddd.common.domain;
 
 public class AggregateRoot<T> {
     public T object;
-    protected String id;
+    protected Long id;
 
-    protected AggregateRoot(T object, String id) {
+    protected AggregateRoot(T object, Long id) {
         this.object = object;
         this.id = id;
     }
 
-    public String getId() {
+    public Long getId() {
         return this.id;
     }
 }
