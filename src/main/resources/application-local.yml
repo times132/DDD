@@ -9,3 +9,11 @@ spring:
     url: jdbc:h2:~/test
     username: admin
     password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      format_sql: true
+      show_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
